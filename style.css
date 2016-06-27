@@ -3,5 +3,90 @@
 Theme Name: StemWP
 
 Description: Bootstrap Wordpress theme for Stem Site
+Author: Chelsea Porter
+Author URI: http://www.chelseaporter.com/
 
 */
+@import url('bootstrap/css/bootstrap.min.css');
+@import url('flexslider/flexslider.css');
+
+html, body. div{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+.btn-xl {
+    padding: 18px 28px;
+    font-size: 50px; //change this to your desired size
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.darkGryBG{
+	background:#1C1C1C;
+	color:#444444;
+	border-top:#1E1E1E thick solid;
+	padding: 10px 0 20px 0;
+}
+
+.footerTxtLg{
+	color:white;
+	font-size:24px;
+	margin-top: 20px;
+    margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.GryBG{
+	background:#444343;
+	color:#A4A4A4;
+	border-top:#1E1E1E thick solid;
+	padding: 10px 0 20px 0;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.homeSliderBG{
+  background: url("images/nc-countryside.jpg");
+  background-size: cover;
+}
+
+.row{
+  padding:15px 0 15px 0;
+}
+
+.navbar-inverse{
+	border-top:10px solid #9EC8EB;
+  border-bottom:10px solid #9EC8EB;
+  box-shadow: 0px 5px 10px #888888;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin:0;
+  padding: 8px;
+  font-size: 30px;
+  font-family: serif;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.noDots{
+	list-style-type: none;
+    padding: 0;
+}
+
+.padding{
+	padding:0 15px;
+}
