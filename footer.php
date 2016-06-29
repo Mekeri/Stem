@@ -1,5 +1,5 @@
 
-</div><!--closes main row with background image homeSliderBG -->
+
 <div id = "footer">
 
   <div class="row GryBG">

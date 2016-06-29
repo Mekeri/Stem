@@ -17,4 +17,30 @@ add_theme_support( 'html5', array( 'search-form' ) );
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+
+	function arphabet_widgets_init() {
+
+		register_sidebar( array(
+			'name'          => 'news sidebar',
+			'id'            => 'news-bar',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="rounded">',
+			'after_title'   => '</h2>',
+		) );
+		register_sidebar( array(
+			'name'          => 'cal sidebar',
+			'id'            => 'cal-bar',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="rounded">',
+			'after_title'   => '</h2>',
+		) );
+
+	}
+	add_action( 'widgets_init', 'arphabet_widgets_init' );
 ?>
